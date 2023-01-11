@@ -1,0 +1,120 @@
+// interface
+
+
+// type Square ={
+//     color:String,
+//     width:Number
+// }
+
+
+
+
+interface Square {
+    color:String,
+    width:Number
+}
+
+
+let rect : Square ={
+    color:'red',
+    width:100
+}
+
+
+
+// interface Student {
+//     name : string
+// }
+
+// interface Teacher{
+//     name : String,
+//     age : number
+// }
+
+
+interface Student{
+    name : string;
+}
+
+interface Teacher extends Student{
+    age : number
+}
+
+
+
+interface Product{
+    brand : String,
+    seriallNumber : Number,
+    model : String[]
+}
+
+
+let it : Product ={
+    brand : "samsung",
+    seriallNumber:14560,
+    model: ["tv","phone"]
+}
+
+console.log(it)
+
+interface Cart{
+    product:string,
+    price : number
+}
+
+
+let buket :Cart[] = [{product:'청소기',price:15000},{product:'주방기기',price:40000}]
+
+
+
+
+// 추가 -> extends ->newCard
+interface Newcard extends Cart{
+    card:boolean
+}
+
+let buket2 : Newcard ={product:'청소기',price:15000,card:false}
+console.log(buket2)
+
+
+
+// 중복
+
+// interface Animal {
+//     name: string
+// }
+
+// interface Animal{
+//     age : number
+// }
+
+// let myCat : Animal ={
+//     name:'black',
+//     age: 5
+// }
+
+
+
+// type Animal ={
+//     name : string
+// }
+// type Aniaml = {
+//     age : number
+// }
+// // 중복이 오류
+
+
+
+
+// interface Dog{
+//     name : string
+// }
+
+// interface Cat extends Dog{
+//     name :number;
+// }
+
+// -> 속성이 겹치게 되면 에러
+
+
+

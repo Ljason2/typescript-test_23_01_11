@@ -1,0 +1,11 @@
+let my:{age :number}={age:20}
+
+let project :{ 
+   member :string[],
+   days :number,
+   start: boolean 
+} = {
+    member : ['peapl1', 'people2'],
+    days:30,
+    start : true
+}

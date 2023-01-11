@@ -1,0 +1,68 @@
+// class
+
+// class Person{
+//    data = 0;
+//     constructor(){}
+//     methode(){}
+
+// }
+
+
+// class Person{
+//    data :number= 0;
+//     constructor(){}
+//     methode(){}
+// }
+
+
+
+// let name2 = new Person();
+// console.log(name2.data)
+
+// class People{
+//     name;
+//     age;
+//     constructor(a:string){
+//         this.name =a;
+//         this.age = 5;
+//     }
+// }
+
+// let source = new People('cat')
+// console.log(source.name)
+
+
+class People{
+    name : string;
+    age;
+    constructor(a='cat'){
+        this.name =a;
+        this.age = 5;
+    }
+}
+
+let source = new People()
+console.log(source.name);
+
+
+
+class car{
+    model : string;
+    price : number;
+    constructor(a:string,b:number){
+        this.model =a;
+        this.price =b;
+    }
+    tax():number{
+        return this.price * 0.1;
+    }
+}
+
+let mycar = new car('redcar',30000)
+
+console.log(mycar.model)
+console.log(mycar.tax())
+
+
+
+

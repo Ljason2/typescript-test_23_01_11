@@ -1,0 +1,40 @@
+type Dog = string | number | undefined ;
+let animal :Dog ='black';
+animal =123;
+console.log(animal);
+
+
+type City={
+    readonly region:String
+}
+let etc:City={
+    region:'seoul'
+}
+
+// etc.region='busan';
+
+type Name=string;
+type Age =number;
+type Person = Name | Age
+
+type PositionX ={x:number}
+type PositionY ={y:number}
+type Newtype= PositionX & PositionY
+// {x: , y: }
+let position : Newtype={x:10,y:20}
+
+// type은 재할당이 안된다.
+
+
+
+type NewType2={
+    color?:string,
+    size:number,
+   readonly position:number[]
+}
+
+let num: NewType2 ={
+    size:123,
+    position:[1,2,3],
+}
+console.log(num)

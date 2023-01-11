@@ -1,0 +1,53 @@
+let people1 : number |string =123;
+let people2 : (number | string) =123;
+// people2=234;
+//console.log(people2)
+
+let num1 : (number | string)[]=[1,'2',3];
+// let num2 : number | string[] =[1,'2',3] -> error;
+
+let str1 : {a:(string|number)} = {a:'123'}
+
+let name1 : any;
+name1 =123;
+name1 = 'string';
+name1 = undefined;
+
+// unknown -> 모든 데이터 가능
+let nam2 :unknown = 'string';
+nam2 = 123;
+nam2 = []
+nam2 = 'cat';
+let str2 = nam2;
+console.log(str2)
+
+// let nam3 :unknown;
+// let str3=nam3
+
+let age: string | number ;
+// console.log(age + 1);
+// let age1 : string = 'people';
+// let age2 : number=123;
+// console.log(age1 + 1)
+
+
+let user : string ='park'
+let age3 :(undefined | number) = undefined;
+let start : boolean = false;
+let kim : (string | number | undefined | boolean)[] =[user, age3, start]
+
+let num =123;
+console.log(num)
+
+
+let school:{
+    score:(number | boolean)[],
+    teacher:string,
+    people3:string|string[]
+}={
+    score :[100,97,84],
+    teacher: 'kim',
+    people3 : 'park'
+}
+school.score[4]=false;
+school.people3 =['lee',school.teacher];
